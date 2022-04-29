@@ -33,4 +33,5 @@ if (OPTIMIZATIONS_FIRST_START) {
     }
 } else {
     registerServiceWorker();
+    
 }

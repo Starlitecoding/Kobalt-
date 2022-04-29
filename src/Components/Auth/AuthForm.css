@@ -10,6 +10,7 @@
     -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
     height: 100%;
+    
 }
 
 .authorization-form-content {
@@ -18,7 +19,11 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    margin-top: -100px;
+    margin-right: 50%px;
 }
+
+
 
 .authorization-form-content .footer-wrapper {
     margin-top: auto;
@@ -40,4 +45,13 @@
 .authorization-actions {
     text-align: center;
     display: flex;
+}
+
+.authBack{
+    position: relative;
+    width: 60%;
+    height: 100%;
+object-fit:cover;
+float: left;
+margin-left: 0px 0px 0px;
 }

@@ -221,83 +221,14 @@ class Caption extends React.Component {
             case 'authorizationStateWaitEncryptionKey':
             case 'authorizationStateWaitTdlibParameters':
             case 'authorizationStateWaitTdlib': {
-                control = <Logo className='auth-caption-telegram-logo' />;
-                break;
+                
             }
             case 'authorizationStateWaitCode':
             case 'authorizationStateWaitPassword': {
-                control = (
-                    <div className='auth-caption-telegram-logo'>
-                        { data && (
-                            <React.Suspense fallback={null}>
-                                <RLottie
-                                    ref={this.lottieRef}
-                                    options={{
-                                        width: 160,
-                                        height: 160,
-                                        autoplay: false,
-                                        loop: false,
-                                        fileId,
-                                        stringData: data
-                                    }}
-                                />
-                                <RLottie
-                                    options={{
-                                        width: 160,
-                                        height: 160,
-                                        autoplay: false,
-                                        loop: false,
-                                        fileId: 'tracking',
-                                        stringData: trackingData,
-                                        queueLength: 1
-                                    }}
-                                    style={{ display: 'none' }}
-                                />
-                                <RLottie
-                                    options={{
-                                        width: 160,
-                                        height: 160,
-                                        autoplay: false,
-                                        loop: false,
-                                        fileId: 'close',
-                                        stringData: closeData,
-                                        queueLength: 1
-                                    }}
-                                    style={{ display: 'none' }}
-                                />
-                                <RLottie
-                                    options={{
-                                        width: 160,
-                                        height: 160,
-                                        autoplay: false,
-                                        loop: false,
-                                        fileId: 'peek',
-                                        stringData: peekData,
-                                        queueLength: 1
-                                    }}
-                                    style={{ display: 'none' }}
-                                />
-                                <RLottie
-                                    options={{
-                                        width: 160,
-                                        height: 160,
-                                        autoplay: false,
-                                        loop: false,
-                                        fileId: 'idle',
-                                        stringData: idleData,
-                                        queueLength: 1
-                                    }}
-                                    style={{ display: 'none' }}
-                                />
-                            </React.Suspense>
-                        )}
-                    </div>
-                );
+        
                 break;
             }
-            default:
-                control = <Logo className='auth-caption-telegram-logo' />;
-                break;
+        
         }
 
         return <div className='auth-caption'>{control}</div>;

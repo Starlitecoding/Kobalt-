@@ -16,7 +16,10 @@ import Phone from './Phone';
 import { loadData } from '../../Utils/Phone';
 import AppStore from '../../Stores/ApplicationStore';
 import AuthStore from '../../Stores/AuthorizationStore';
+
 import './AuthForm.css';
+
+
 
 class AuthForm extends React.Component {
     state = {
@@ -99,11 +102,14 @@ class AuthForm extends React.Component {
 
         return (
             <div className='authorization-form' onLoad={this.handleLoad}>
+                <img src='./auth_background.jpg' alt='mountain' className='authBack' />
                 <div className='authorization-form-content'>
                     <Caption state={state} />
                     {control}
                     <Footer/>
                 </div>
+
+                
                 <AuthErrorDialog />
             </div>
         );

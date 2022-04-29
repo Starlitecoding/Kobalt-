@@ -38,5 +38,4 @@
 .sidebar-page-section-divider {
     margin: 0 -8px;
     width: calc(100% + 16px);
-    border-bottom: 1px solid var(--border);
 }

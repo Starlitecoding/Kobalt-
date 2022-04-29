@@ -43,7 +43,7 @@
     padding: 7px;
     box-sizing: border-box;
     fill: var(--color-accent-main);
-    animation: 0.25s ease-out 0.1s both qr-content-animation;
+    animation: 0.25s ease-out 0.3s both qr-content-animation;
 }
 
 .auth-qr-subtitle {

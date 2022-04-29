@@ -1,9 +1,4 @@
-/*
- *  Copyright (c) 2018-present, Evgeny Nadymov
- *
- * This source code is licensed under the GPL v.3.0 license found in the
- * LICENSE file in the root directory of this source tree.
- */
+
 
 a {
     text-decoration: none;
@@ -34,12 +29,11 @@ pre {
 
     margin-top: 3px;
     margin-bottom: 0;
-    padding: 6px 12px;
+    padding: 6px 8px;
     border-style: solid;
     border-width: 1px;
     border-radius: 4px;
 
-    white-space: pre-wrap;
     word-wrap: break-word;
     word-break: break-word;
 }
@@ -48,7 +42,6 @@ pre code {
     padding: 0;
     font-size: inherit;
     color: inherit;
-    white-space: pre-wrap;
     background-color: transparent;
     border-radius: 0;
 }
@@ -105,7 +98,7 @@ pre code {
 }
 
 .message-padding {
-    min-width: 36px;
+    min-width: 2px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -117,7 +110,7 @@ pre code {
 }
 
 .message-wrapper {
-    max-width: 766px;
+    max-width: 93%;
     padding: 5px 6px;
     margin: 0 auto;
     display: flex;
@@ -232,55 +225,54 @@ pre code {
 }
 
 .message-bubble {
-    border-radius: 12px 12px 12px 0;
+    border-radius: 8px 8px 8px 0;
     padding: 6px 9px;
-    box-shadow: 0 1px 2px 0 rgba(16, 35, 47, 0.15);
     background: var(--message-in-background);
     overflow: hidden;
 }
 
 .message-short .message-bubble {
-    border-radius: 12px;
+    border-radius: 8px;
 }
 
 .message-group-title .message-bubble:not(.message-bubble-out) {
-    border-radius: 12px 12px 12px 6px;
+    border-radius: 8px 8px 8px 6px;
 }
 
 .message-group .message-bubble:not(.message-bubble-out) {
-    border-radius: 6px 12px 12px 6px;
+    border-radius: 6px 8px 8px 6px;
 }
 
 .message-group-tail .message-bubble:not(.message-bubble-out) {
-    border-radius: 6px 12px 12px 0;
+    border-radius: 6px 8px 8px 0;
 }
 
 .message-group-tail-rounded .message-bubble:not(.message-bubble-out) {
-    border-radius: 6px 12px 12px 12px;
+    border-radius: 6px 8px 8px 8px;
 }
 
 .message-rounded .message-bubble:not(.message-bubble-out) {
-    border-radius: 12px 12px 12px 12px;
+    border-radius: 8px 8px 8px 8px;
 }
 
 .message-group-title .message-bubble.message-bubble-out {
-    border-radius: 12px 12px 6px 12px;
+    border-radius: 8px 8px 6px 8px;
 }
 
 .message-group .message-bubble.message-bubble-out {
-    border-radius: 12px 6px 6px 12px;
+    border-radius: 8px 6px 6px 8px;
 }
 
 .message-group-tail .message-bubble.message-bubble-out {
-    border-radius: 12px 6px 0 12px;
+    border-radius: 8px 6px 0 8px;
 }
 
 .message-group-tail-rounded .message-bubble.message-bubble-out {
-    border-radius: 12px 6px 12px 12px;
+    border-radius: 8px 6px 8px 8px;
 }
 
 .message-rounded .message-bubble.message-bubble-out{
-    border-radius: 12px 12px 12px 12px;
+    border-radius: 8px 8px 8px 8px;
 }
 
 .message:not(.message-out):not(.message-bubble-hidden):not(.message-group-tail-rounded):not(.message-rounded) .user-tile::before,
@@ -363,7 +355,7 @@ pre code {
 
 .message-bubble-out {
     background: var(--message-out-background);
-    border-radius: 12px 12px 0 12px;
+    border-radius: 8px 8px 0 8px;
 }
 
 .message-bubble-out::after {
@@ -425,7 +417,7 @@ pre code {
     height: 24px;
     padding: 2px;
     box-sizing: border-box;
-    border-radius: 12px;
+    border-radius: 8px;
     opacity: 0;
     align-self: center;
     color: white;

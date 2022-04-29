@@ -6,10 +6,9 @@
  */
 
 .scroll-down-button {
-    border: 1px solid var(--border);
     background: var(--panel-background);
     position: absolute;
-    right: 24px;
-    bottom: 12px;
+    right: 1.25%;
+    bottom: 30px;
     border-radius: 50%;
 }

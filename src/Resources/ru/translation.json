@@ -1,7 +1,7 @@
 {
   "Activity": "Активность",
   "AnimalsNature": "Животные и природа",
-  "AppName": "Telegram",
+  "AppName": "Kobalt",
   "Archived": "Архив",
   "BioAbout": "Любые подробности, например: возраст, род занятий или город.\nПример: 23 года, дизайнер из Санкт-Петербурга.",
   "ChannelInfo": "Информация о канале",
@@ -55,7 +55,7 @@
   "SendFileConfirmation": "Вы действительно хотите отправить файл?",
   "SendFilesConfirmation": "Вы действительно хотите отправить файлы?",
   "SendMessage": "Отправить сообщение",
-  "SignInToTelegram": "Вход в Telegram",
+  "SignInToTelegram": "Вход в Kobalt",
   "SmileysPeople": "Смайлики и люди",
   "StartText": "Пожалуйста, укажите код страны и свой номер телефона.",
   "Stickers": "СТИКЕРЫ",

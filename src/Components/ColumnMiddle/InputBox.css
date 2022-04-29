@@ -19,9 +19,9 @@
     /*border-top-width: 1px;*/
     /*border-top-style: solid;*/
     /*border-color: var(--border);*/
-    padding: 0 0 25px;
+    padding: 0 0 10px;
     width: calc(100% - 22px);
-    max-width: 695px;
+
     margin: 0 auto;
     position: relative;
     z-index: 1;

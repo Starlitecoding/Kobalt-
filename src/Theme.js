@@ -70,10 +70,10 @@ function updateLightTheme(theme) {
     style.setProperty('--dialog-color', '#000000');
     style.setProperty('--dialog-subtle-color', '#707579');
     style.setProperty('--dialog-meta-color', '#5F6369');
-    style.setProperty('--dialog-meta-read-color', '#4FAE4E');
+    style.setProperty('--dialog-meta-read-color', '#7085d4');
 
     style.setProperty('--media-in-tile-background', theme.palette.primary.main);
-    style.setProperty('--media-out-tile-background', '#4FAE4E');
+    style.setProperty('--media-out-tile-background', '#345beb');
 
     style.setProperty('--message-in-link', theme.palette.primary.main);
     style.setProperty('--message-in-author', theme.palette.primary.main);
@@ -88,18 +88,18 @@ function updateLightTheme(theme) {
     style.setProperty('--message-in-control-border', theme.palette.primary.main + '77');
     style.setProperty('--message-in-control-border-hover', theme.palette.primary.main);
 
-    style.setProperty('--message-out-link', '#4FAE4E');
-    style.setProperty('--message-out-author', '#4FAE4E');
-    style.setProperty('--message-out-background', '#EEFFDE');
+    style.setProperty('--message-out-link', '#7085d4');
+    style.setProperty('--message-out-author', '#345beb');
+    style.setProperty('--message-out-background', '#EEF');
     style.setProperty('--message-out-color', '#000000');
-    style.setProperty('--message-out-subtle-color', '#4FAE4E');
-    style.setProperty('--message-out-meta-color', '#4FAE4E');
-    style.setProperty('--message-out-reply-title', '#4FAE4E');
-    style.setProperty('--message-out-reply-border', '#4FAE4E');
-    style.setProperty('--message-out-control', '#4FAE4E');
-    style.setProperty('--message-out-control-hover', '#4FAE4E' + '22');
-    style.setProperty('--message-out-control-border', '#4FAE4E' + '77');
-    style.setProperty('--message-out-control-border-hover', '#4FAE4E');
+    style.setProperty('--message-out-subtle-color', '#7085d4');
+    style.setProperty('--message-out-meta-color', '#7085d4');
+    style.setProperty('--message-out-reply-title', '#7085d4');
+    style.setProperty('--message-out-reply-border', '#7085d4');
+    style.setProperty('--message-out-control', '#7085d4');
+    style.setProperty('--message-out-control-hover', '#7085d4' + '22');
+    style.setProperty('--message-out-control-border', '#7085d4' + '77');
+    style.setProperty('--message-out-control-border-hover', '#7085d4');
 }
 
 function updateDarkTheme(theme) {
@@ -158,7 +158,7 @@ function updateDarkTheme(theme) {
     style.setProperty('--dialog-color', '#ffffff');
     style.setProperty('--dialog-subtle-color', theme.palette.text.secondary);
     style.setProperty('--dialog-meta-color', theme.palette.text.secondary);
-    style.setProperty('--dialog-meta-read-color', '#4FAE4E');
+    style.setProperty('--dialog-meta-read-color', '#7085d4');
 
     style.setProperty('--media-in-tile-background', theme.palette.primary.main);
     style.setProperty('--media-out-tile-background', theme.palette.primary.main);
@@ -244,7 +244,7 @@ function createTheme(type, primary) {
             useNextVariants: true
         },
         shape: {
-            borderRadius: 10
+            borderRadius: 5
         },
         overrides: {
             MuiOutlinedInput: {
@@ -274,12 +274,12 @@ function createTheme(type, primary) {
             },
             MuiMenuList: {
                 root: {
-                    minWidth: 150
+                    minWidth: 300
                 }
             },
             MuiList: {
                 root: {
-                    minWidth: 150
+                    minWidth: 300
                 }
             },
             MuiListItemIcon: {
@@ -304,8 +304,8 @@ function createTheme(type, primary) {
             // },
             MuiMenuItem: {
                 root: {
-                    paddingTop: 10,
-                    paddingBottom: 10
+                    paddingTop: 5,
+                    paddingBottom: 5
                 }
             },
             MuiTouchRipple,
@@ -335,7 +335,7 @@ function withTheme(WrappedComponent) {
         constructor(props) {
             super(props);
 
-            let { type, primary } = { type: 'light', primary: { main: '#50A2E9' } };
+            let { type, primary } = { type: 'light', primary: { main: '#5a50e9' } };
             try {
                 const themeOptions = JSON.parse(localStorage.getItem('themeOptions'));
                 if (themeOptions) {
@@ -354,7 +354,7 @@ function withTheme(WrappedComponent) {
         }
 
         onSystemThemeChange = () => {
-            let { type, primary } = { type: 'light', primary: { main: '#50A2E9' } };
+            let { type, primary } = { type: 'light', primary: { main: '#5a50e9' } };
             try {
                 const themeOptions = JSON.parse(localStorage.getItem('themeOptions'));
                 if (themeOptions && themeOptions.type !== 'default') {

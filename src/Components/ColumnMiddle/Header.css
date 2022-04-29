@@ -20,8 +20,6 @@
     align-items: center;
     overflow: hidden;
     /*box-sizing: border-box;*/
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
     background: var(--panel-background);
     border-color: var(--border);
     padding: 0 8px;
@@ -31,7 +29,7 @@
 .header-details-content {
     display: flex;
     flex-direction: column;
-    height: 120px;
+    height: 100px;
     width: 100%;
     align-self: flex-end;
     will-change: transform;
@@ -51,7 +49,7 @@
 }
 
 .header-title {
-    padding: 15px 19px 15px;
+    padding: 10px 19px 15px;
 }
 
 .header-status {

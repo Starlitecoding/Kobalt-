@@ -1,6 +1,7 @@
 # Kobalt
 
-
+### About
+The app was developed as EndTerm project by Akhmetov S., Omarov A. Ilyas O.
 ### Technical details
 
 The app is based on the ReactJS JavaScript framework and TDLib (Telegram Database library) compiled to WebAssembly.
